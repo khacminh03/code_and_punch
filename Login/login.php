@@ -99,7 +99,7 @@
                 $statement->fetch();
 
                 // Kiểm tra mật khẩu
-                if (password_verify($password, password_hash($password, PASSWORD_DEFAULT))) {
+                if (password_verify($password, $hashed_password)) {
                     echo 'Login successful. Welcome!';
                     
                     header('Location: Homepage/home.php');
