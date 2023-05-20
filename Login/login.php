@@ -105,11 +105,6 @@
                     header('Location: Homepage/home.php');
                     exit;
                 } else {
-                    var_dump($hashed_password);
-                    var_dump($username);
-                    var_dump($password);
-                    var_dump(password_hash($password, PASSWORD_DEFAULT));
-                    var_dump(password_verify($password, password_hash($password, PASSWORD_DEFAULT)));
                     echo 'Incorrect password.';
                 }
             } else {
